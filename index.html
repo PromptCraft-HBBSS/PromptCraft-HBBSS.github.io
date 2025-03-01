@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/style/main.css"/>
+        <link id="default-markings-css" rel="stylesheet" type="text/css" href="/style/notRough.css"/>
+        <link id="rough-markings-css" rel="stylesheet" type="text/css" href="/style/useRough.css"/>
+        <script src="src/scripts/markdownSupport.mjs" type="module"></script>
+        <script src="src/scripts/enhanceDOM.mjs" type="module"></script>
+        <script src="src/scripts/blink.mjs" type="module"></script>
+        <title>启言社</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="heading-block md">
+                <h1>PromptCraft<span id="blink">|</span></h1>
+                <h2>启言社</h2>
+                <h2 class="md">==Prompt Engineering== and ==NLP== analysis</h2>
+                <div>
+                    <p>Prompt Engineering, the alchemy of crafting prompts.</p>
+                    <p>Machine Learning, the forging of silica oracles.</p>
+                    <p class="md">**报名** <a href='/signup.html'>点我 -></a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="section-block md">
+                <div>
+                    <h1>创社 - Founding</h1>
+                    <span>社团关于大语言模型的入门和应用, 在人工智能时代的大河中找到顺流的方向, 如何人人都有大模型的情况下如何玩的脱颖而出？</span>
+                </div>
+                <br/>
+
+                <div>
+                    <h1>活动内容 Agenda</h1>
+                    <p>GitHub Roadmap: <a href="https://github.com/PromptCraft-HBBSS/Roadmap">Here -></a></p>
+                    <h3>底层分析 Quantative Analysis</h3>
+                    <p>关于不同prompt的NLP分析, 例如embedding或者semantic embedding
+                        适合对于计算机科学稍有了解的同学</p>                    
+                    <h3>高级分析 NL Analysis</h3>
+                    <p>开发不同prompt写作策略, 从高层语言结构分析不同的prompt
+                        适合对LLM感兴趣但是无基础知识的同学</p>
+                </div>
+            </div>
+            <hr/>
+            <div id="contact" class="section-block">
+                <h2>联系我们 Contact Us</h2>
+                <span class="md">**邮箱 Email** <a href="mailto:promptcraft@makabaka1880.xyz">promptcraft@makabaka1880.xyz</a></span><br>
+                <span class="md">**核心开发组招新** 给本站的`/api/join`端点发送一个POST请求, Body为: 
+                ```
+{
+    "name": "你的名字",
+    "section": "CORE_DEV",
+    "email": "email-here@email-domain.sth",
+    "role": "dev,{如果是在校学生写stu不然写aux}",
+    "message": "其他留言, 比如github主页或者其他东西"
+}
+                ```
+                <span class="md">**报名** <a href='/signup.html'>点击这里 -></a></span>
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

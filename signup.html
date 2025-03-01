@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/style/main.css"/>
+        <link rel="stylesheet" type="text/css" href="/style/signup.css"/>
+        <link id="default-markings-css" rel="stylesheet" type="text/css" href="/style/notRough.css"/>
+        <link id="rough-markings-css" rel="stylesheet" type="text/css" href="/style/useRough.css"/>
+        <script src="src/scripts/markdownSupport.mjs" type="module"></script>
+        <script src="src/scripts/enhanceDOM.mjs" type="module"></script>
+        <script src="src/scripts/blink.mjs" type="module"></script>
+        <script src="src/scripts/formmanip.mjs" type="module"></script>
+        <title>启言社</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="heading-block md">
+                <h1>Sign Up <span id="blink">|</span></h1>
+                <h2>报名</h2>
+            </div>
+        </div>
+        
+        <div class="section-block md">
+            <form action="/submit" method="POST" id="signupForm">
+                <p>请先填写完所有表单才能提交哦</p>
+                
+                <div class="md ques">
+                    <h2>1. 姓名</h2>
+                    <input type="text" name="name" placeholder="输入您的姓名" required>
+                </div>
+                
+                <div class="md ques">
+                    <h2>2. 校内外人员</h2>
+                    <select name="affiliation" required>
+                        <option value="">请选择</option>
+                        <option value="stu">校内</option>
+                        <option value="aux">校外</option>
+                    </select>
+                </div>
+                
+                <div class="md ques">
+                    <h2>3. 希望参加</h2>
+                    <select name="participation" id="participationSelect" required>
+                        <option value="">请选择</option>
+                        <option value="NLP">NLP - 自然语言量化分析组(硬核)</option>
+                        <option value="HLP">HLP - 高层语言结构分析(感兴趣的同学)</option>
+                        <option value="ALL">我!都!要!</option>
+                        <option value="other">其他(请填写)</option>
+                    </select>
+                    <input type="text" name="otherParticipation" id="otherParticipation" placeholder="请描述您想参加的组别" style="display: none;">
+                </div>
+                
+                <div class="md ques">
+                    <h2>4. 邮箱</h2>
+                    <input type="email" name="email" placeholder="输入您的邮箱" required>
+                </div>
+                
+                <div class="md ques">
+                    <h2>5. 留言</h2>
+                    <input type="text" name="message" placeholder="还有什么要说的嘛, 作品集, 微信号, etc">
+                </div>
+                
+                <p>网站正在维护, 请报名者发邮件到 <a href="mailto:promptcraft@makabaka1880.xyz">promptcraft@makabaka1880.xyz</a></p>
+                <button type="button" id="submitBtn">Submit 提交</button>
+            </form>
+        </div>
+    </body>
+</html>
